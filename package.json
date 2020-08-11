@@ -1,0 +1,24 @@
+{
+  "name": "express-router-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node local.js",
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init-claudia": "claudia generate-serverless-express-proxy --express-module server",
+    "create-api": "claudia create --handler lambda.handler --deploy-proxy-api --region us-east-2",
+    "update-api": "claudia --update"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.730.0",
+    "aws-serverless-express": "^3.3.8",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "claudia": "^5.12.0"
+  }
+}

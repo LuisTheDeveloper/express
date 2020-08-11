@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "express-router-experiments-executor",
+    "name": "express-router-experiments",
+    "region": "us-east-2"
+  },
+  "api": {
+    "id": "8tby3501xf"
+  }
+}
