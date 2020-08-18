@@ -3,7 +3,7 @@ const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const fetch = require("node-fetch");
 
-const apiKey = "3b5b2b535e8b6802663007320719f2a1";
+const apiKey = API_KEY;
 
 router.get("/:city", async (req, res) => {
   console.log(req.params.city);
